@@ -1,0 +1,37 @@
+{
+  "name": "trimail",
+  "version": "1.0.0",
+  "description": "Library for parsing email threads and removing quoted or repeated reply content.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "dev": "tsx src/index.ts",
+    "test": "tsx src/test.ts"
+  },
+  "keywords": [
+    "email",
+    "trim",
+    "quoted",
+    "repeated",
+    "hidden",
+    "signature",
+    "quotes",
+    "gmail",
+    "outlook"
+  ],
+  "author": {
+    "name": "Danylo Shchepin",
+    "email": "shchepin.man@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
