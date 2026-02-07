@@ -15,7 +15,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc",
     "prepublishOnly": "npm run build",
     "dev": "tsx src/index.ts"
   },
