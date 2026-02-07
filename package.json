@@ -5,14 +5,19 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "dev": "tsx src/index.ts",
-    "test": "tsx src/test.ts"
+    "dev": "tsx src/index.ts"
   },
   "keywords": [
     "email",
@@ -23,15 +28,34 @@
     "signature",
     "quotes",
     "gmail",
-    "outlook"
+    "outlook",
+    "parser",
+    "thread",
+    "reply",
+    "strip",
+    "clean",
+    "apple-mail",
+    "protonmail",
+    "html"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreQll/trimail"
+  },
+  "homepage": "https://github.com/FreQll/trimail#readme",
   "author": {
     "name": "Danylo Shchepin",
     "email": "shchepin.man@gmail.com"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "node-html-parser": "^7.0.2"
   }
 }
